@@ -21,4 +21,5 @@ void loop() {
   joystick[0] = analogRead(JOYSTICK_X);
   joystick[1] = analogRead(JOYSTICK_Y);
   radio.write( joystick, sizeof(joystick) );
+  delay(5);
 }
